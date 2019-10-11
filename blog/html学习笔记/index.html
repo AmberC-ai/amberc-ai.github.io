@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+
+<title>HTML学习笔记</title>
+
+<meta name="generator" content="Hugo 0.56.3" />
+<link rel="stylesheet" href="https://amberc-ai.github.io/css/owl.carousel.css" />
+<link rel="stylesheet" href="https://amberc-ai.github.io/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://amberc-ai.github.io/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://amberc-ai.github.io/css/ionicons.min.css" />
+<link rel="stylesheet" href="https://amberc-ai.github.io/css/animate.css" />
+<link rel="stylesheet" href="https://amberc-ai.github.io/css/syntax.css" />
+<link rel="stylesheet" href="https://amberc-ai.github.io/css/venobox.css" />
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="https://amberc-ai.github.io/css/style.css" />
+
+
+
+<script src="https://amberc-ai.github.io/js/jquery-1.10.2.min.js"></script>
+<script async src="https://amberc-ai.github.io/js/bootstrap.min.js"></script>
+<script async src="https://amberc-ai.github.io/js/owl.carousel.min.js"></script>
+<script async src="https://amberc-ai.github.io/js/plugins.js"></script>
+<script async src="https://amberc-ai.github.io/js/venobox.min.js"></script>
+<script async src="https://amberc-ai.github.io/js/main.js"></script>
+
+
+
+</head>
+<body>
+
+	
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="https://amberc-ai.github.io/">
+                <img src="https://amberc-ai.github.io/img/logo.png" alt="My New Hugo Site Logo">
+              </a>
+            </div>
+            
+
+            
+            <div class="collapse navbar-collapse" id="navigation">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://amberc-ai.github.io/">Life</a></li>
+                
+                <li><a href="https://amberc-ai.github.io/work">Work</a></li>
+                
+                <li><a href="https://amberc-ai.github.io/blog">Blog</a></li>
+                
+                <li><a href="https://amberc-ai.github.io/service">Books</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+	<div class="post">
+	  
+	  <section class="section" style="border: 1px dotted #ddd;">
+	    <div class="container">
+	      <div class="row">
+	        <div>
+	          <div class="block">
+							<img src="https://amberc-ai.github.io/img/blog/%E6%89%8B%E7%BB%98.jpg" width="100%" alt="post-image"> 
+	            <h1>HTML学习笔记</h1>
+	            <div class="post-info-wrapper">
+	              <p class="italic">By <span class="bold"></span> on <span class="bold">Oct 9, 2019</span></p>
+	            </div>
+	            <hr />
+	            <p>
+
+<h1 id="html学习笔记">HTML学习笔记</h1>
+
+<p><h3>HTML简介<h3></p>
+
+<p>HTML<strong>是一种超文本标记语言</strong>，使用标记标签来描述网页。</p>
+
+<p>一般使用专业的HTML<strong>编辑器</strong>来编辑HTML，主要包括：</p>
+
+<ul>
+<li><p>Adobe Dreamweaver</p></li>
+
+<li><p>Microsoft Expression Web</p></li>
+
+<li><p>CoffeCup HTML Editor</p></li>
+</ul>
+
+<p><u>也可使用文本编辑器如：Notepad(PC)、TextEdit(Mac)来学习HTML</u></p>
+
+<p><h3>HTML基本格式<h3></p>
+
+<pre><code class="language-html">  &lt;!DOCTYPE HTML&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+      &lt;meta&gt;
+      &lt;title&gt;&lt;/title&gt;
+      &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h1&gt;第一个标题&lt;/h1&gt;
+  &lt;p&gt;第一个段落&lt;/p&gt;
+  &lt;/body&gt;
+  &lt;html&gt;
+</code></pre>
+
+<p><u><strong>!DOCTYPE</strong>用来声明html的版本类型，不同版本的html有不同的声明，详情见百度。<body>元素中的内容为页面可见内容</u></p>
+
+<p><h3>属性<h3></p>
+
+<p>属性提供了有关HTML元素的<strong>更多信息</strong>，总是在<strong>开始标签</strong>中规定。如：</p>
+
+<pre><code class="language-html">  &lt;html&gt;
+      &lt;body&gt;
+          &lt;div name=&quot;Amber&quot;&gt;
+              块
+          &lt;/div&gt;
+      &lt;/body&gt;
+  &lt;/html&gt;
+</code></pre>
+
+<p><u>name属性为元素定义名称</u></p>
+
+<p><u>注：属性总是以名称/值对的形式出现，如name=Amber,name是属性，Amber是属性值。</u></p>
+
+<p>属性值始终被包含在<strong>引号</strong>内，通常为双引号。但有时属性值里本身就包含双引号，这时必须使用单引号。如：</p>
+
+<pre><code class="language-html">  name='Bill&quot;HelloWorld&quot;Gates'
+</code></pre>
+
+<p><em>更多属性标签详见<a href="https://www.w3school.com.cn/tags/html_ref_standardattributes.asp">https://www.w3school.com.cn/tags/html_ref_standardattributes.asp</a></em></p>
+
+<p><h3>HTML标题<h3></p>
+
+<p>HTML标题（heading)是通过<strong>h1-h6</strong>等标签进行定义的</p>
+
+<pre><code class="language-html">  &lt;h1&gt;这是一个标题&lt;/h1&gt;
+  &lt;h2&gt;这是一个标题&lt;/h2&gt;
+  &lt;h3&gt;这是一个标题&lt;/h3&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><h1>这是一个标题<h1></p>
+
+<p><h2>这是一个标题<h2></p>
+
+<p><h3>这是一个标题<h3></p>
+
+<p><u>搜索引擎将根据标题来为网页的结构和内容编制索引，所以不要仅仅为了使用大号或粗体字而使用标题，而应用标题来呈现文档结构</u></p>
+
+<p><h3>HTML段落<h3></p>
+
+<p>HTML段落通过<strong>p</strong>标签进行定义</p>
+
+<pre><code class="language-html">  &lt;p&gt;
+      这是第一个段落
+  &lt;/p&gt;
+  &lt;p&gt;
+      这是第二个段落
+  &lt;/p&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><p>这是第一个段落</p></p>
+
+<p><p>这是第二个段落</p></p>
+
+<p><h3>HTML表格<h3></p>
+
+<p>HTML表格由<strong>table</strong>标签定义，*tr（table row)*属性定义<strong>一行</strong>，*td（table data)*属性定义<strong>一格</strong>。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。</p>
+
+<p><h4>无边框表格<h4></p>
+
+<pre><code class="language-html">  &lt;table&gt;
+      &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><table>
+      <tr>
+      <td>1</td>
+      <td>2</td>
+      </tr>
+      <tr>
+      <td>3</td>
+      <td>4</td>
+      </tr>
+  </table></p>
+
+<p><u>也可以在<strong>table</strong>标签中添加<strong>border</strong>属性来添加表格边框</u></p>
+
+<p><h4>frame属性<h4></p>
+
+<p><strong>frame</strong>属性可定义围绕表格的<strong>边框</strong></p>
+
+<pre><code class="language-html">  &lt;table frame=&quot;above&quot;&gt;
+      &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;table frame=&quot;below&quot;&gt;
+      &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;table frame=&quot;hsides&quot;&gt;
+      &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;table frame=&quot;vsides&quot;&gt;
+     &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;/tr&gt; 
+  &lt;/table&gt;
+  &lt;table frame=&quot;box&quot;&gt;
+      &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><p>
+      <table frame="above">
+      <tr>
+      <td>1</td>
+      <td>2</td>
+      </tr>
+      <tr>
+      <td>3</td>
+      <td>4</td>
+      </tr>
+  </table></p>
+  <p>
+      <table frame="below">
+      <tr>
+      <td>1</td>
+      <td>2</td>
+      </tr>
+      <tr>
+      <td>3</td>
+      <td>4</td>
+      </tr>
+  </table></p>
+  <p>
+      <table frame="hsides">
+      <tr>
+      <td>1</td>
+      <td>2</td>
+      </tr>
+      <tr>
+      <td>3</td>
+      <td>4</td>
+      </tr>
+  </table></p>
+  <p>
+      <table frame="vsides">
+     <tr>
+      <td>1</td>
+      <td>2</td>
+      </tr>
+      <tr>
+      <td>3</td>
+      <td>4</td>
+      </tr>
+  </table></p>
+  <p>
+      <table frame="box">
+      <tr>
+      <td>1</td>
+      <td>2</td>
+      </tr>
+      <tr>
+      <td>3</td>
+      <td>4</td>
+      </tr>
+  </table></p></p>
+
+<p><h4>表格标题<h4></p>
+
+<p>表格标题由<strong>caption</strong>标签定义</p>
+
+<pre><code class="language-html">  &lt;table border=&quot;1&quot;&gt;
+      &lt;caption&gt;数字&lt;/caption&gt;
+      &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><table border="1">
+      <caption>数字</caption>
+      <tr>
+      <td>1</td>
+      <td>2</td>
+      </tr>
+      <tr>
+      <td>3</td>
+      <td>4</td>
+      </tr>
+  </table></p>
+
+<p><h4>表格表头<h4></p>
+
+<p>表格表头（heading)由<strong>th</strong>标签定义，与<strong>td</strong>标签一样定义一格，但th中的文本会以<strong>粗体，居中</strong>的方式显示。</p>
+
+<pre><code class="language-html">  &lt;table border=&quot;1&quot;&gt;
+      &lt;tr&gt;
+      &lt;th&gt;中文名&lt;/th&gt;
+      &lt;th&gt;英文名&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;张三&lt;/td&gt;
+      &lt;td&gt;ThreeZ&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;table border=&quot;1&quot;&gt;
+      &lt;tr&gt;
+      &lt;th&gt;中文名&lt;/th&gt;
+      &lt;td&gt;张三&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;th&gt;英文名&lt;/th&gt;
+      &lt;td&gt;ThreeZ&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><table border="1">
+      <tr>
+      <th>中文名</th>
+      <th>英文名</th>
+      </tr>
+      <tr>
+      <td>张三</td>
+      <td>ThreeZ</td>
+      </tr>
+  </table>
+  <table border="1">
+      <tr>
+      <th>中文名</th>
+      <td>张三</td>
+      </tr>
+      <tr>
+      <th>英文名</th>
+      <td>ThreeZ</td>
+      </tr>
+  </table></p>
+
+<p><h4>跨行或跨列的表格<h4></p>
+
+<p><strong>colspan</strong>属性可定义<strong>跨列</strong>的表格，<strong>rowspan</strong>属性可定义<strong>跨行</strong>的表格</p>
+
+<pre><code class="language-html">  &lt;table border=&quot;1&quot;&gt;
+      &lt;tr&gt;
+      &lt;th&gt;中文名&lt;/th&gt;
+      &lt;th colspan=&quot;2&quot;&gt;英文名&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;张三&lt;/td&gt;
+      &lt;td&gt;ThreeZ&lt;/td&gt;
+      &lt;td&gt;Jack&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;table border=&quot;1&quot;&gt;
+      &lt;tr&gt;
+      &lt;th&gt;中文名&lt;/th&gt;
+      &lt;td&gt;张三&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;th rowspan=&quot;2&quot;&gt;英文名&lt;/th&gt;
+      &lt;td&gt;ThreeZ&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Jack&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><p>
+     <table border="1">
+      <tr>
+      <th>中文名</th>
+      <th colspan="2">英文名</th>
+      </tr>
+      <tr>
+      <td>张三</td>
+      <td>ThreeZ</td>
+      <td>Jack</td>
+      </tr>
+  </table></p>
+  <p>
+      <table border="1">
+      <tr>
+      <th>中文名</th>
+      <td>张三</td>
+      </tr>
+      <tr>
+      <th rowspan="2">英文名</th>
+      <td>ThreeZ</td>
+      </tr>
+      <tr><td>Jack</td></tr>
+  </table></p></p>
+
+<p><u><strong>colspan、rowspan</strong>属性对<strong>td</strong>标签同样适用</u></p>
+
+<p><h4>单元格边距<h4></p>
+
+<p><strong>cellpadding</strong>属性定义单元格<strong>边距</strong>，能让单元格中的<strong>文本</strong>与表格<strong>边框</strong>有一定距离。</p>
+
+<pre><code class="language-html">  &lt;table border=&quot;1&quot; cellpadding=&quot;15&quot;&gt;
+      &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><p>
+      <table border="1" cellpadding="15">
+      <tr>
+      <td>1</td>
+      <td>2</td>
+      </tr>
+      <tr>
+      <td>3</td>
+      <td>4</td>
+      </tr>
+  </table></p></p>
+
+<p><h4>单元格间距<h4></p>
+
+<p><strong>cellspacing</strong>属性定义单元格<strong>间距</strong>，能让单元格与单元格之间有一定距离。</p>
+
+<pre><code class="language-html">  &lt;table border=&quot;1&quot; cellspacing=&quot;15&quot;&gt;
+      &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/table&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><table border="1" cellspacing="15">
+      <tr>
+      <td>1</td>
+      <td>2</td>
+      </tr>
+      <tr>
+      <td>3</td>
+      <td>4</td>
+      </tr>
+  </table></p>
+
+<p><em>更多表格标签详见百度</em></p>
+
+<p><h3>HTML列表<h3></p>
+
+<p>HTML列表分为<strong>无序列表、有序列表、定义列表、嵌套列表</strong>。</p>
+
+<p><h4>无序列表（ul)<h4></p>
+
+<pre><code class="language-html">  &lt;ul type=&quot;disc&quot;&gt;
+   &lt;li&gt;苹果&lt;/li&gt;
+   &lt;li&gt;香蕉&lt;/li&gt;
+   &lt;li&gt;柠檬&lt;/li&gt;
+   &lt;li&gt;桔子&lt;/li&gt;
+  &lt;/ul&gt;  
+  
+  
+  &lt;ul type=&quot;circle&quot;&gt;
+   &lt;li&gt;苹果&lt;/li&gt;
+   &lt;li&gt;香蕉&lt;/li&gt;
+   &lt;li&gt;柠檬&lt;/li&gt;
+   &lt;li&gt;桔子&lt;/li&gt;
+  &lt;/ul&gt;  
+  
+  
+  &lt;ul type=&quot;square&quot;&gt;
+   &lt;li&gt;苹果&lt;/li&gt;
+   &lt;li&gt;香蕉&lt;/li&gt;
+   &lt;li&gt;柠檬&lt;/li&gt;
+   &lt;li&gt;桔子&lt;/li&gt;
+  &lt;/ul&gt;  
+  
+</code></pre>
+
+<p><img src="D:blog-hugoblogthemesairspace-hugostaticimgblog效果1.jpg" alt="效果1" /></p>
+
+<p><h4>有序列表<h4></p>
+
+<pre><code class="language-html">  &lt;h4&gt;数字列表：&lt;/h4&gt;
+  &lt;ol&gt;
+   &lt;li&gt;苹果&lt;/li&gt;
+   &lt;li&gt;香蕉&lt;/li&gt;
+   &lt;li&gt;柠檬&lt;/li&gt;
+   &lt;li&gt;桔子&lt;/li&gt;
+  &lt;/ol&gt;  
+  
+  &lt;h4&gt;字母列表：&lt;/h4&gt;
+  &lt;ol type=&quot;A&quot;&gt;
+   &lt;li&gt;苹果&lt;/li&gt;
+   &lt;li&gt;香蕉&lt;/li&gt;
+   &lt;li&gt;柠檬&lt;/li&gt;
+   &lt;li&gt;桔子&lt;/li&gt;
+  &lt;/ol&gt;  
+  
+  &lt;h4&gt;小写字母列表：&lt;/h4&gt;
+  &lt;ol type=&quot;a&quot;&gt;
+   &lt;li&gt;苹果&lt;/li&gt;
+   &lt;li&gt;香蕉&lt;/li&gt;
+   &lt;li&gt;柠檬&lt;/li&gt;
+   &lt;li&gt;桔子&lt;/li&gt;
+  &lt;/ol&gt;  
+  
+  &lt;h4&gt;罗马字母列表：&lt;/h4&gt;
+  &lt;ol type=&quot;I&quot;&gt;
+   &lt;li&gt;苹果&lt;/li&gt;
+   &lt;li&gt;香蕉&lt;/li&gt;
+   &lt;li&gt;柠檬&lt;/li&gt;
+   &lt;li&gt;桔子&lt;/li&gt;
+  &lt;/ol&gt;  
+  
+  &lt;h4&gt;小写罗马字母列表：&lt;/h4&gt;
+  &lt;ol type=&quot;i&quot;&gt;
+   &lt;li&gt;苹果&lt;/li&gt;
+   &lt;li&gt;香蕉&lt;/li&gt;
+   &lt;li&gt;柠檬&lt;/li&gt;
+   &lt;li&gt;桔子&lt;/li&gt;
+  &lt;/ol&gt;  
+  
+</code></pre>
+
+<p>效果</p>
+
+<p><h4>数字列表：</h4>
+  <ol>
+   <li>苹果</li>
+   <li>香蕉</li>
+   <li>柠檬</li>
+   <li>桔子</li>
+  </ol></p>
+
+<p><h4>字母列表：</h4>
+  <ol type="A">
+   <li>苹果</li>
+   <li>香蕉</li>
+   <li>柠檬</li>
+   <li>桔子</li>
+  </ol></p>
+
+<p><h4>小写字母列表：</h4>
+  <ol type="a">
+   <li>苹果</li>
+   <li>香蕉</li>
+   <li>柠檬</li>
+   <li>桔子</li>
+  </ol></p>
+
+<p><h4>罗马字母列表：</h4>
+  <ol type="I">
+   <li>苹果</li>
+   <li>香蕉</li>
+   <li>柠檬</li>
+   <li>桔子</li>
+  </ol></p>
+
+<p><h4>小写罗马字母列表：</h4>
+  <ol type="i">
+   <li>苹果</li>
+   <li>香蕉</li>
+   <li>柠檬</li>
+   <li>桔子</li>
+  </ol></p>
+
+<p><h4>定义列表（dl)<h4></p>
+
+<pre><code class="language-html">  &lt;dl&gt;
+     &lt;dt&gt;计算机&lt;/dt&gt;
+     &lt;dd&gt;用来计算的仪器 ... ...&lt;/dd&gt;
+     &lt;dt&gt;显示器&lt;/dt&gt;
+     &lt;dd&gt;以视觉方式显示信息的装置 ... ...&lt;/dd&gt;
+  &lt;/dl&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><dl>
+     <dt>计算机</dt>
+     <dd>用来计算的仪器 &hellip; &hellip;</dd>
+     <dt>显示器</dt>
+     <dd>以视觉方式显示信息的装置 &hellip; &hellip;</dd>
+  </dl></p>
+
+<p><u>在<strong>li</strong>和<strong>dd</strong>标签中再加入<strong>ul、ol</strong>或<strong>dl</strong>标签可创建相应的嵌套列表</u></p>
+
+<p><h3>HTML块级元素<h3></p>
+
+<p>HTML块级元素（block level element)在显示时，通常会以新行开始。<strong>h1、p、table、ul</strong>等都是块级元素。</p>
+
+<p><h4>div元素<h4></p>
+
+<p><strong>div</strong>元素没有特定的含义，但可作为其他元素的容器，再用样式对页面进行布局的时候，可以对较大的块进行布局；<strong>div</strong>元素可以通过设置板块对页面进行布局。</p>
+
+<p><h3>HTML链接<h3></p>
+
+<p>HTML链接由<strong>a</strong>标签定义的</p>
+
+<p><h4>超级链接<h4></p>
+
+<pre><code class="language-html">  &lt;a href=&quot;zy.whu.edu.cn&quot;&gt;武汉大学作业系统&lt;/a&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><a href="zy.whu.edu.cn">武汉大学作业系统</a></p>
+
+<p><h4>图像链接<h4></p>
+
+<pre><code class="language-html">  &lt;a href=&quot;http://www.cctv.com/&quot;&gt;
+  &lt;img src=&quot;:\Users\HP\Pictures\70周年阅兵.jpg&quot;&gt;
+  &lt;/a&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><a href="http://www.cctv.com/"><img src="C:UsersHPPictures70周年阅兵大阅兵.jpg" alt="大阅兵" /></p>
+
+<p></a></p>
+
+<p><h4>邮件链接<h4></p>
+
+<p>邮件链接也是用<strong>href</strong>属性，在邮箱地址前加上<strong>mailto</strong></p>
+
+<pre><code class="language-html">  &lt;a href=&quot;mailto:1316695365@qq.com subject=see%20you&quot;&gt;点这里发送邮件&lt;/a&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><a href="mailto:1316695365@qq.com subject=see%20you">点这里发送邮件</a></p>
+
+<p><u>用%20代表空格利于正确显示文本</u></p>
+
+<p><h4>target属性<h4></p>
+
+<p>target属性可以定义链接在何处显示，如：</p>
+
+<pre><code class="language-html">  &lt;a href=&quot;zy.whu.edu.cn&quot; target=&quot;_blank&quot;&gt;武汉大学作业系统&lt;/a&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><a href="zy.whu.edu.cn" target="_blank">武汉大学作业系统</a></p>
+
+<p><u>&ldquo;_blank&rdquo;会让上面这个链接在一个新窗口打开。（在不设置target属性时链接也会在新窗口打开）</u></p>
+
+<pre><code class="language-html">  &lt;a href=&quot;http://www.cctv.com/&quot; target=&quot;_top&quot;&gt;jump&lt;/a&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><a href="http://www.cctv.com/" target="_top">jump</a></p>
+
+<p><u>target=&rdquo;_top&rdquo;能在被固定在框架时跳出框架。</u></p>
+
+<p><h4>name属性<h4></p>
+
+<p>可以使用<strong>name</strong>属性来创建页面中的书签。当创建这个书签后，可以创建一个可以跳转到该书签的链接。该书签是不可见的，但这个链接可见。读者可通过该链接直接跳转到页面的书签处，就不用不断地翻动页面来查找内容。</p>
+
+<pre><code class="language-html">  &lt;p&gt;
+     &lt;a href=&quot;#hj&quot;&gt;查看获奖情况&lt;/a&gt; 
+  &lt;/p&gt;
+  &lt;p&gt;
+      作者生平
+  &lt;/p&gt;
+  &lt;P&gt;
+      创作背景
+  &lt;/P&gt;
+  &lt;p&gt;
+      内容梗概
+  &lt;/p&gt;
+  &lt;p&gt;&lt;a name=&quot;hj&quot;&gt;
+      获奖情况
+      &lt;/a&gt;
+  &lt;/p&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><p>
+     <a href="#hj">查看获奖情况</a>
+  </p>
+  <p>
+      作者生平
+  </p>
+  <P>
+      创作背景
+  </P>
+  <p>
+      内容梗概
+  </p>
+  <p><a name="hj">
+      获奖情况
+      </a>
+  </p></p>
+
+<h3 id="h3-html图像-h3"><h3>HTML图像<h3></h3>
+
+<p>HTML图像由标签<img>定义，<strong>src</strong>属性说明图像地。</p>
+
+<pre><code class="language-html">  &lt;img src=&quot;天眼.jpg&quot;/&gt;
+</code></pre>
+
+<p>效果</p>
+
+<h6 id="h4-alt属性-h4"><h4>alt属性<h4></h6>
+
+<p><strong>alt</strong>属性，即文本替换属性。当浏览器无法载入图像时，会显示替换文本，替换文本告诉读者他们失去的信息。</p>
+
+<pre><code class="language-html">  &lt;img src=&quot;天眼.jpg&quot; width=&quot;200&quot; height=&quot;100&quot; alt=&quot;中国天眼&quot;/&gt;
+</code></pre>
+
+<p><u>width、height属性可以规定图像的大小</u></p>
+
+<p>效果</p>
+
+<h6 id="h4-设置对齐方式-h4"><h4>设置对齐方式<h4></h6>
+
+<pre><code class="language-html">  &lt;p&gt;
+      这是&lt;img src=&quot;&quot; align=&quot;bottom&quot;&gt;图像
+  &lt;/p&gt;
+  &lt;p&gt;
+      这是&lt;img src=&quot;&quot; align=&quot;center&quot;&gt;图像
+  &lt;/p&gt;
+  &lt;p&gt;
+      这是&lt;img src=&quot;&quot; align=&quot;top&quot;&gt;图像
+  &lt;/p&gt;
+</code></pre>
+
+<p>效果</p>
+
+<h6 id="h4-图像映射-h4"><h4>图像映射<h4></h6>
+
+<p>图像映射是指创建带有可供点击区域的图片，每一个可点击区域都是一个超级链接。</p>
+
+<h3 id="h3-html内联元素-h3"><h3>HTML内联元素<h3></h3>
+
+<p>与块级元素相反，内联元素通常不会以新行开始。<strong>b(粗体)、td、a、</strong><strong>img</strong>等都是内联元素。</p>
+
+<h6 id="h4-span元素-h4"><h4>span元素<h4></h6>
+
+<p>与<strong>div</strong>相同，<strong>span</strong>元素也没有特定的含义，与<strong>css</strong>同用时，可对内联元素进行设定。</p>
+
+<h3 id="h3-html-样式-h3"><h3>HTML 样式<h3></h3>
+
+<p><strong>style</strong>属性提供了一种能改变所有HTML元素样式的方法。通过 HTML 样式，能够通过使用 <strong>style</strong> 属性直接将样式添加到 HTML 元素。</p>
+
+<h6 id="h4-外部样式表-h4"><h4>外部样式表<h4></h6>
+
+<p><strong>link</strong>标签定义文档与外部资源的关系。当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。</p>
+
+<pre><code class="language-html">&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+
+<h6 id="h4-内部样式表-h4"><h4>内部样式表<h4></h6>
+
+<p>当单个文件需要特别样式时，就可以使用内部样式表。你可以在 head 部分通过 <strong>style</strong>标签定义内部样式表。</p>
+
+<pre><code class="language-html">&lt;head&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+body {background-color: red}
+p {margin-left: 20px}
+&lt;/style&gt;
+&lt;/head&gt;
+</code></pre>
+
+<h6 id="h4-内联样式-h4"><h4>内联样式<h4></h6>
+
+<pre><code class="language-html">&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1 style=&quot;bacground-color:red&quot;&gt;
+            标题背景颜色为红色
+        &lt;/h1&gt;
+        &lt;h1 style=&quot;text-align:center&quot;&gt;
+            标题居中对齐
+        &lt;/h1&gt;
+        &lt;p style=&quot;font-family:italic&quot;&gt;
+            段落字体为斜体
+        &lt;/p&gt;
+        &lt;p style=&quot;color:yellow&quot;&gt;
+            段落文字为黄色
+        &lt;/p&gt;
+        &lt;p style=&quot;font-size:20px&quot;&gt;
+            段落文字大小为20像素
+        &lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>其中</p>
+
+<ul>
+<li><strong>background-color</strong>属性定义了背景颜色</li>
+<li><strong>text-align</strong>属性定义了对齐方式</li>
+<li><strong>font-family</strong>属性定义了字体</li>
+<li><strong>color</strong>属性定义了字体颜色</li>
+<li><strong>font-size</strong>属性定义了字体大小</li>
+</ul>
+
+<p><u>HTML4引入style后也废除了若干标签和属性，编写时不建议使用。具体废除标签和属性详见百度</u></p>
+
+<h3 id="h3-如何查看源代码-h3"><h3>如何查看源代码<h3></h3>
+
+<p>在网页中单击右键，然后选择“查看源文件”（IE）或“查看页面源代码”（Firefox），其他浏览器的做法也是类似的。这么做会打开一个包含页面 HTML 代码的窗口。</p>
+
+<h3 id="h3-html类-h3"><h3>HTML类<h3></h3>
+
+<p><strong>class</strong>属性可为<strong>div、span</strong>设置类，用css为相同的类设置相同的样式，可以更加方便有效。</p>
+
+<pre><code class="language-html">&lt;html&gt;
+    &lt;head&gt;
+      &lt;style&gt;
+        .sujects{
+        background-color:grey;
+        color:black;
+        margin:10px;
+        padding:15px;
+ 
+          }&lt;/style&gt;  
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;subjects&quot;&gt;
+            &lt;h1&gt;
+                语文
+            &lt;/h1&gt;
+            &lt;p&gt;
+                blablabla
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;subjects&quot;&gt;
+            &lt;h1&gt;
+                数学
+            &lt;/h1&gt;
+            &lt;p&gt;
+                blablabla
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;subjects&quot;&gt;
+            &lt;h1&gt;
+                英语
+            &lt;/h1&gt;
+            &lt;p&gt;
+                blablabla
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>效果</p>
+
+<h3 id="h3-html注释-h3"><h3>HTML注释<h3></h3>
+
+<p>可以用<!--and-->标签对HTML源代码添加注释和提醒信息，如</p>
+
+<pre><code class="language-html">&lt;!--这是一段注释--&gt;
+&lt;!--记得在这里添加信息--&gt;
+</code></pre>
+
+<p><u>注释内容不会在页面中显现，但能帮助我们读懂源代码,放置提醒信息</u></p>
+
+<h3 id="h3-html文本格式化-h3"><h3>HTML文本格式化<h3></h3>
+
+<h6 id="h4-字体-h4"><h4>字体<h4></h6>
+
+<pre><code class="language-html">&lt;html&gt;
+
+&lt;body&gt;
+
+&lt;b&gt;This text is bold&lt;/b&gt;&lt;br /&gt;
+
+&lt;strong&gt;This text is strong&lt;/strong&gt;&lt;br /&gt;
+
+&lt;big&gt;This text is big&lt;/big&gt;&lt;br /&gt;
+
+&lt;em&gt;This text is emphasized&lt;/em&gt;&lt;br /&gt;
+
+&lt;i&gt;This text is italic&lt;/i&gt;&lt;br /&gt;
+
+&lt;small&gt;This text is small&lt;/small&gt;&lt;br /&gt;
+
+This text contains&lt;sub&gt;subscript&lt;/sub&gt;&lt;br /&gt;
+
+This text contains&lt;sup&gt;superscript&lt;/sup&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+<p>效果</p>
+
+<p><b>This text is bold</b></p>
+
+<p><strong>This text is strong</strong></p>
+
+<p><big>This text is big</big></p>
+
+<p><em>This text is emphasized</em></p>
+
+<p><i>This text is italic</i></p>
+
+<p><small>This text is small</small></p>
+
+<p>This text contains<sub>subscript</sub></p>
+
+<p>This text contains<sup>superscript</sup></p>
+
+<h6 id="h4-引用-h4"><h4>引用<h4></h6>
+
+<p><strong>blockquote</strong>标签定义长引用，使用长引用浏览器会插入外边距和换行并进行缩进处理；<strong>q</strong>标签定义短的引用，使用短的引用浏览器会插入引号，除此之外没有其他特别的显示。</p>
+
+<pre><code class="language-html">&lt;blockquote&gt;
+    现代社会是个陌生人组成的社会，各人不知道各人的底细，所以得讲个明白；还要怕口说无凭，画个押，签个字。这样才发生法律。在乡土社会中法律是无从发生的。
+&lt;/blockquote&gt;
+&lt;q&gt;乡土中国&lt;/q&gt;
+</code></pre>
+
+<p>效果</p>
+
+<blockquote>
+    现代社会是个陌生人组成的社会，各人不知道各人的底细，所以得讲个明白；还要怕口说无凭，画个押，签个字。这样才发生法律。在乡土社会中法律是无从发生的。
+</blockquote>
+
+<p><q>乡土中国</q></p>
+
+<h6 id="h4-缩写和首字母缩写-h4"><h4>缩写和首字母缩写<h4></h6>
+
+<p><strong>abbr</strong>标签定义缩写；<strong>acroonym</strong>标签定义首字母缩写。某些浏览器中，当把鼠标移到缩略词上，*title*属性可显示缩略词的完整版本。</p>
+
+<pre><code class="language-html">&lt;abbr title=&quot;etcetera&quot;&gt;etc.&lt;/abbr&gt;
+&lt;acronym title=&quot;World Wide Web&quot;&gt;WWW&lt;/acronym&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><abbr title="etcetera">etc.</abbr>
+<acronym title="World Wide Web">WWW</acronym></p>
+
+<p><u>仅对于 IE 5 中的 acronym 元素有效。对于 Netscape 6.2 中的 abbr 和 acronym 元素都有效。*dfn*标签和*title*属性搭配使用也有类似效果。</u></p>
+
+<h6 id="h4-预格式文本-h4"><h4>预格式文本<h4></h6>
+
+<p><strong>pre</strong>标签定义预格式文本，预格式文本可以保留换行和空格，常用于计算机代码的编辑。</p>
+
+<pre><code class="language-html">&lt;pre&gt;#include(stdio.h)
+int main(void)
+printf(&quot;hello world\n&quot;)
+return 0&lt;/pre&gt;
+</code></pre>
+
+<p>效果</p>
+
+<pre>#include(stdio.h)
+int main(void)
+printf("hello world\n");
+return 0;</pre>
+
+<h6 id="h4-著作标题和联系信息-h4"><h4>著作标题和联系信息<h4></h6>
+
+<p><strong>cite</strong>标签定义著作标题，通常以斜体显示文本；<strong>address</strong>标签定义联系信息，通常以斜体显示，大多数浏览器会在此元素前后添加折行</p>
+
+<pre><code class="language-html">&lt;cite&gt;The Great Gatsby&lt;/cite&gt;
+&lt;p&gt;
+    blabla
+&lt;/p&gt;
+&lt;address&gt;Written by F.Scott Fitzgerald&lt;/address&gt;
+</code></pre>
+
+<p>效果</p>
+
+<p><cite>The Great Gatsby</cite></p>
+
+<p><p>
+    blabla
+</p>
+<address>Written by F.Scott Fitzgerald</address></p>
+
+<p><em>更多HTML文本格式化标签详见<a href="https://www.w3school.com.cn/html/html_formatting.asp">https://www.w3school.com.cn/html/html_formatting.asp</a></em></p>
+
+<h3 id="h3-html字符实体-h3"><h3>HTML字符实体<h3></h3>
+
+<p>在 HTML 中，某些字符是预留的。如：在 HTML 中不能使用小于号（&lt;）和大于号（&gt;），这是因为浏览器会误认为它们是标签。如果希望正确地显示预留字符，我们必须在 HTML 源代码中使用字符实体（character entities）。</p>
+
+<p><em>详细的字符实体参考手册见网址<a href="https://www.w3school.com.cn/tags/html_ref_entities.html">https://www.w3school.com.cn/tags/html_ref_entities.html</a></em></p>
+
+<h3 id="h3-htmlmeta元素-h3"><h3>HTMLmeta元素<h3></h3>
+
+<p><strong>meta</strong> 元素被用于规定页面的描述、关键词、文档的作者、最后修改时间以及其他元数据。</p>
+
+<p>元数据可用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他 web 服务。</p>
+
+<pre><code class="language-html">&lt;meta name=&quot;description&quot; content=&quot;Free Web tutorials on HTML, CSS, XML&quot; /&gt;
+</code></pre>
+
+<p><u>上面这串代码定义页面的描述</u></p>
+
+<pre><code class="language-html">&lt;meta name=&quot;keywords&quot; content=&quot;HTML, CSS, XML&quot; /&gt;
+</code></pre>
+
+<p><u>上面这串代码定义页面的关键词</u></p>
+
+<h3 id="h3-html文件路径-h3"><h3>HTML文件路径<h3></h3>
+
+<h6 id="h4-绝对路径-h4"><h4>绝对路径<h4></h6>
+
+<p>绝对文件路径是指向一个因特网文件的完整 URL：</p>
+
+<pre><code class="language-html">&lt;img src=&quot;https://www.w3school.com.cn/images/picture.jpg&quot; alt=&quot;flower&quot;&gt;
+</code></pre>
+
+<h6 id="h4-相对路径-h4"><h4>相对路径<h4></h6>
+
+<table>
+<thead>
+<tr>
+<th>src=&ldquo;picture.jpg&rdquo;</th>
+<th>picture.jpg 位于与当前网页相同的文件夹</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>src=&ldquo;images/picture.jpg&rdquo;</td>
+<td>picture.jpg 位于当前文件夹的 images 文件夹中</td>
+</tr>
+
+<tr>
+<td>src=&ldquo;/images/picture.jpg&rdquo;</td>
+<td>picture.jpg 当前站点根目录的 images 文件夹中</td>
+</tr>
+
+<tr>
+<td>src=&ldquo;../picture.jpg&rdquo;</td>
+<td>picture.jpg 位于当前文件夹的上一级文件夹中</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="h3-html-iframe-h3"><h3>HTML iframe<h3></h3>
+
+<p><strong>iframe</strong>标签用于创建网页中的网页</p>
+
+<pre><code class="language-html">&lt;iframe src=&quot;URL&quot; width=&quot;200&quot; height=&quot;200&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+</code></pre>
+
+<p><u><strong>src</strong>属性说明内网页的地址，<strong>width</strong>、<strong>height</strong>属性规定内网页的宽高，<strong>frameborder</strong>可定义内网页的边框</u></p>
+
+<h6 id="h4-使用-iframe-作为链接的目标-h4"><h4>使用 iframe 作为链接的目标<h4></h6>
+
+<pre><code class="language-html">&lt;iframe src=&quot;URL&quot; name=&quot;iframe_a&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;url&quot; target=&quot;iframe_a&quot;&gt;链接到内网页&lt;/a&gt;&lt;/p&gt;
+</code></pre>
+</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+	<p class="center-text" style="padding: 30px;">
+	  <a class="btn btn-main" href="https://amberc-ai.github.io//blog">Back to blog</a>
+	</p>
+
+	
+		
+<section id="call-to-action" style="background-image: url('https://amberc-ai.github.io/img/call-to-action-bg.jpg');">
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>We design delightful digital experiences.</h2>
+          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
+          
+          <a class="btn btn-main btn-solid-border" href="#" >tell us your story</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+	
+
+	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+            <li><a href="https://amberc-ai.github.io/">Where I go</a></li>
+            
+            <li><a href="https://amberc-ai.github.io/contact">Who I meet</a></li>
+            
+            <li><a href="https://amberc-ai.github.io/work">What I do</a></li>
+            
+          </ul>
+        </div>
+        <p>Copyright &copy; Design &amp; Developed by Themefisher. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

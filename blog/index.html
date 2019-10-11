@@ -14,7 +14,7 @@
 
 
 
-<title>Blog</title>
+<title>Blogs</title>
 
 <meta name="generator" content="Hugo 0.56.3" />
 <link rel="stylesheet" href="https://amberc-ai.github.io/css/owl.carousel.css" />
@@ -66,15 +66,13 @@
             
             <div class="collapse navbar-collapse" id="navigation">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="https://amberc-ai.github.io/">Home</a></li>
+                <li><a href="https://amberc-ai.github.io/">Life</a></li>
                 
                 <li><a href="https://amberc-ai.github.io/work">Work</a></li>
                 
                 <li><a href="https://amberc-ai.github.io/blog">Blog</a></li>
                 
-                <li><a href="https://amberc-ai.github.io/service">Service</a></li>
-                
-                <li><a href="https://amberc-ai.github.io/contact">Contact</a></li>
+                <li><a href="https://amberc-ai.github.io/service">Books</a></li>
                 
               </ul>
             </div>
@@ -86,12 +84,12 @@
 </header>
 
 	
-<section id="global-header" style="background-image: url('https://amberc-ai.github.io/img/slider-bg.webp');">
+<section id="global-header" style="background-image: url('https://amberc-ai.github.io/');">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <h1>Blog</h1>
+                    <h1>Blogs</h1>
                     <p></p>
                 </div>
             </div>
@@ -106,59 +104,36 @@
 				<div class="col-md-6">
 					<article class="blog-post">
 						
-						<img src="https://amberc-ai.github.io/img/blog/blog-post-4.jpg" class="img-responsive" alt="post-thumb"> 
-						<a class="post-title" href="https://amberc-ai.github.io/blog/migrate-from-jekyll/">Migrate from Jekyll</a>
+						<img src="https://amberc-ai.github.io/img/blog/%E6%89%8B%E7%BB%98.jpg" class="img-responsive" alt="post-thumb"> 
+						<a class="post-title" href="https://amberc-ai.github.io/blog/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">HTML学习笔记</a>
 						<p>
-							Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &lt;root&gt;/ ▾ images/ logo.png  should become
-▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
+							HTML学习笔记 HTML简介
+HTML是一种超文本标记语言，使用标记标签来描述网页。
+一般使用专业的HTML编辑器来编辑HTML，主要包括：
+ Adobe Dreamweaver
+ Microsoft Expression Web
+ CoffeCup HTML Editor
+  也可使用文本编辑器如：Notepad(PC)、TextEdit(Mac)来学习HTML
+HTML基本格式
+&lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta&gt; &lt;title&gt;&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;第一个标题&lt;/h1&gt; &lt;p&gt;第一个段落&lt;/p&gt; &lt;/body&gt; &lt;html&gt;  !DOCTYPE用来声明html的版本类型，不同版本的html有不同的声明，详情见百度。元素中的内容为页面可见内容
+属性
+属性提供了有关HTML元素的更多信息，总是在开始标签中规定。如：
+&lt;html&gt; &lt;body&gt; &lt;div name=&quot;Amber&quot;&gt; 块 &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;  name属性为元素定义名称
+注：属性总是以名称/值对的形式出现，如name=Amber,name是属性，Amber是属性值。
+属性值始终被包含在引号内，通常为双引号。但有时属性值里本身就包含双引号，这时必须使用单引号。如：
+name='Bill&quot;HelloWorld&quot;Gates'  更多属性标签详见https://www.w3school.com.cn/tags/html_ref_standardattributes.asp
+HTML标题
+HTML标题（heading)是通过h1-h6等标签进行定义的
+&lt;h1&gt;这是一个标题&lt;/h1&gt; &lt;h2&gt;这是一个标题&lt;/h2&gt; &lt;h3&gt;这是一个标题&lt;/h3&gt;  效果
+这是一个标题
+这是一个标题
+这是一个标题
+搜索引擎将根据标题来为网页的结构和内容编制索引，所以不要仅仅为了使用大号或粗体字而使用标题，而应用标题来呈现文档结构
+HTML段落
+HTML段落通过p标签进行定义
+&lt;p&gt; 这是第一个段落 &lt;/p&gt; &lt;p&gt; 这是第二个段落 &lt;/p&gt;  效果
 						</p>
-						<a href="https://amberc-ai.github.io/blog/migrate-from-jekyll/" class="btn btn-main">Read More</a>
-					</article>
-				</div>
-				
-				<div class="col-md-6">
-					<article class="blog-post">
-						
-						<img src="https://amberc-ai.github.io/img/blog/blog-post-3.jpg" class="img-responsive" alt="post-thumb"> 
-						<a class="post-title" href="https://amberc-ai.github.io/blog/hugo-is-for-lovers/">Hugo is for lovers</a>
-						<p>
-							Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:
-						</p>
-						<a href="https://amberc-ai.github.io/blog/hugo-is-for-lovers/" class="btn btn-main">Read More</a>
-					</article>
-				</div>
-				
-				<div class="col-md-6">
-					<article class="blog-post">
-						
-						<img src="https://amberc-ai.github.io/img/blog/blog-post-2.jpg" class="img-responsive" alt="post-thumb"> 
-						<a class="post-title" href="https://amberc-ai.github.io/blog/creating-a-new-theme/">Creating a new theme</a>
-						<p>
-							Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
-We&rsquo;ll start with creating a new site with a very basic template.
-						</p>
-						<a href="https://amberc-ai.github.io/blog/creating-a-new-theme/" class="btn btn-main">Read More</a>
-					</article>
-				</div>
-				
-				<div class="col-md-6">
-					<article class="blog-post">
-						
-						<img src="https://amberc-ai.github.io/img/blog/blog-post-1.jpg" class="img-responsive" alt="post-thumb"> 
-						<a class="post-title" href="https://amberc-ai.github.io/blog/installation/">How To Setup Airspace Hugo</a>
-						<p>
-							Install this template by following those simple steps: STEP-1 : Hugo installation Check this link below for install hugo on your computer. hugo install documentation
-STEP-2 : Create your project Hugo provides a new command to create a new website.
-hugo new site &lt;new_project&gt;  STEP-3 : Install the theme Run this command
-hugo new site airspace-hugo  and then go to the themes folder inside of airspace-hugo folder. You can also use this command cd airspace-hugo/themes for going to this folder.
-						</p>
-						<a href="https://amberc-ai.github.io/blog/installation/" class="btn btn-main">Read More</a>
+						<a href="https://amberc-ai.github.io/blog/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="btn btn-main">Read More</a>
 					</article>
 				</div>
 				
@@ -178,15 +153,11 @@ hugo new site airspace-hugo  and then go to the themes folder inside of airspace
         <div class="footer-manu">
           <ul>
             
-            <li><a href="https://amberc-ai.github.io/">About us</a></li>
+            <li><a href="https://amberc-ai.github.io/">Where I go</a></li>
             
-            <li><a href="https://amberc-ai.github.io/contact">Contact us</a></li>
+            <li><a href="https://amberc-ai.github.io/contact">Who I meet</a></li>
             
-            <li><a href="https://amberc-ai.github.io/work">How it works</a></li>
-            
-            <li><a href="https://amberc-ai.github.io/blog">Blog</a></li>
-            
-            <li><a href="https://amberc-ai.github.io/">Terms</a></li>
+            <li><a href="https://amberc-ai.github.io/work">What I do</a></li>
             
           </ul>
         </div>
