@@ -6,53 +6,17 @@
     <description>Recent content in Tags on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2015 13:07:31 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2019 13:39:46 +0200</lastBuildDate>
     
 	<atom:link href="https://amberc-ai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>ipsum</title>
-      <link>https://amberc-ai.github.io/tags/ipsum/</link>
-      <pubDate>Sat, 10 Oct 2015 13:07:31 +0200</pubDate>
-      
-      <guid>https://amberc-ai.github.io/tags/ipsum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>hugo</title>
       <link>https://amberc-ai.github.io/tags/hugo/</link>
-      <pubDate>Mon, 03 Aug 2015 13:39:46 +0200</pubDate>
+      <pubDate>Wed, 09 Oct 2019 13:39:46 +0200</pubDate>
       
       <guid>https://amberc-ai.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>theme</title>
-      <link>https://amberc-ai.github.io/tags/theme/</link>
-      <pubDate>Wed, 24 Jun 2015 13:50:46 +0200</pubDate>
-      
-      <guid>https://amberc-ai.github.io/tags/theme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://amberc-ai.github.io/tags/golang/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://amberc-ai.github.io/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://amberc-ai.github.io/tags/programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://amberc-ai.github.io/tags/programming/</guid>
       <description></description>
     </item>
     

@@ -4,75 +4,42 @@
   
   <url>
     <loc>https://amberc-ai.github.io/blog/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://amberc-ai.github.io/categories/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <lastmod>2019-10-09T13:39:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://amberc-ai.github.io/blog/migrate-from-jekyll/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <loc>https://amberc-ai.github.io/categories/</loc>
+    <lastmod>2019-10-09T13:39:46+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://amberc-ai.github.io/blog/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2019-10-09T13:39:46+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://amberc-ai.github.io/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <lastmod>2019-10-09T13:39:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://amberc-ai.github.io/tags/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <lastmod>2019-10-09T13:39:46+02:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://amberc-ai.github.io/tags/ipsum/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://amberc-ai.github.io/categories/lorem/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://amberc-ai.github.io/blog/hugo-is-for-lovers/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://amberc-ai.github.io/tags/hugo/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
+    <lastmod>2019-10-09T13:39:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://amberc-ai.github.io/categories/pseudo/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://amberc-ai.github.io/blog/creating-a-new-theme/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://amberc-ai.github.io/categories/starting/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://amberc-ai.github.io/tags/theme/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
+    <lastmod>2019-10-09T13:39:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -81,25 +48,11 @@
   </url>
   
   <url>
-    <loc>https://amberc-ai.github.io/blog/installation/</loc>
-  </url>
-  
-  <url>
     <loc>https://amberc-ai.github.io/service/</loc>
   </url>
   
   <url>
     <loc>https://amberc-ai.github.io/work/</loc>
-  </url>
-  
-  <url>
-    <loc>https://amberc-ai.github.io/tags/golang/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://amberc-ai.github.io/tags/programming/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
