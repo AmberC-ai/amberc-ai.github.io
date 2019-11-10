@@ -14,7 +14,7 @@
 
 
 
-<title>Contact</title>
+<title>CSS学习笔记</title>
 
 <meta name="generator" content="Hugo 0.56.3" />
 <link rel="stylesheet" href="https://amberc-ai.github.io/css/owl.carousel.css" />
@@ -82,89 +82,1063 @@
     </div>
   </div>
 </header>
-	
-	
-		
-<section id="global-header" style="background-image: url('https://amberc-ai.github.io/img/slider-bg.jpg');">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="block">
-                    <h1>Contact</h1>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
+	<div class="post">
+	  
+	  <section class="section" style="border: 1px dotted #ddd;">
+	    <div class="container">
+	      <div class="row">
+	        <div>
+	          <div class="block">
+							
+	            <h1>CSS学习笔记</h1>
+	            <div class="post-info-wrapper">
+	              <p class="italic">By <span class="bold"></span> on <span class="bold">Jan 1, 0001</span></p>
+	            </div>
+	            <hr />
+	            <p><h1>CSS学习笔记
+</h1>
 
+<h2>背景</h2>
 
-<section id="contact-form">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your name">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your email">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your subject">
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form>
-            <div class="form-group-2">
-              <textarea class="form-control" rows="3" placeholder="Your message"></textarea>
-            </div>
-            <button class="btn btn-default" type="submit">Send message</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div id="contact-box" class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
 
-          <h2>Stop by for a visit</h2>
-          <ul class="address-block">
-            <li>
-              <i class="fa fa-map-marker"></i>North Main Street, Brooklyn Australia
-            </li>
-            <li>
-              <i class="fa fa-envelope-o"></i>Email: contact@mail.com
-            </li>
-            <li>
-              <i class="fa fa-phone"></i>Phone: &#43;88 01672 506 744
-            </li>
-          </ul>
-          <ul class="social-icons">
-          
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        
-        <div class="block">
-          <h2>We Also Count in Google Maps</h2>
-            <div class="google-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.472979439986!2d-73.97769068489596!3d40.7516207793276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590247c56379%3A0x15e13bea38b43e18!2sChrysler+Building!5e0!3m2!1sen!2sus!4v1477406538220" width="555" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
+<tbody>
+<tr>
+<td>background-image</td>
+<td>设置背景图片</td>
+</tr>
 
-	
+<tr>
+<td>background-color</td>
+<td>设置背景颜色</td>
+</tr>
+
+<tr>
+<td>background-position</td>
+<td>设置背景图像起始位置</td>
+</tr>
+
+<tr>
+<td>background-attachment</td>
+<td>设置背景图像固定或随文档一起滚动</td>
+</tr>
+
+<tr>
+<td>background-repeat</td>
+<td>设置背景图像重复和重复方式</td>
+</tr>
+</tbody>
+</table>
+
+<h3>background-position
+
+background-position属性改变图像在背景中的位置，有三种定位方式
+
+<h5>关键字</h5>
+
+定位背景图片位置的关键字包括center、top、bottom、left、right.关键字出现的顺序不作要求，但不能超过两个关键字，如果只出现一个关键字，则另一关键字默认为center.如top left将图片放在元素内的左上角，right将背景图片放在元素右边中部。
+
+```html
+p{
+background-image:url('...');
+background-position:top right
+}
+```
+
+<h5>百分数值</h5>
+
+也可使用百分数值对背景图片进行定位。如60%，40%即是指元素内定位为60%，40%的点与图片内定位为60%，40%的点重合。再如，0%，0%即是指图片的左上角与元素的左上角重合，50%，50%指元素中心与图片中心重合，即图片居中放置。如果只有一个百分数，则该百分数表示水平方向，垂直方向默认为50%.
+
+```html
+p{
+background-image:url('...');
+background-position:66% 33%;
+}
+```
+
+<h5>长度值</h5>
+
+长度值描述的是图片左上角相对于元素内边距左上角的偏移。如50px，100px表示图片左上角距元素内边距右边50px，下边100px.
+
+```html
+p{
+background-image:url('...');
+background-position:50px 100px;
+}
+```
+
+<h3>background-attachment</h3>
+
+<p>将background-attachment属性设置为scroll（滚动）或fixed（固定）可以决定背景图片是否随文档的滚动而滚动。默认值为scroll，设置为fixed后图片在可是区域内是固定不动的，这能够避免因滚动而造成图片消失或位置改变的情况。</p>
+
+<pre><code class="language-html">p{
+background-image:url('...');
+background-attachment:fixed;
+}
+</code></pre>
+
+<h3>background-repeat</h3>
+
+<p>如果需要背景图片在页面平铺可设置background-repeat属性，repeat-x和repeat-y分别对应水平方向上和垂直方向上的重复，no-repeat则不允许重复。背景图片默认从元素的左上角开始。</p>
+
+<pre><code class="language-html">p{
+background-image:url('...');
+background-repeat:repeat-x;
+}
+</code></pre>
+
+<h2>文本</h2>
+
+<table>
+    <tr>
+    <th>属性</th>
+    <th>描述</th>
+    <th>值</th></tr>
+    <tr><td>color</td>
+    <td>设置文本颜色</td>
+    <td>颜色值</td></tr>
+    <tr><td rowspan='3'>direction</td>
+    <td rowspan='3'>设置文本方向</td>
+    <td>rtl（文本向右）</td></tr>
+    <tr><td>ltr(文本向左）</td></tr>
+    <tr><td>inherit（继承父元素文本方向）</td></tr>
+    <tr><td rowspan='4'>text-align</td>
+    <td rowspan='4'>设置文本方向</td>
+    <td>left(左对齐）</td></tr>
+<tr><td>right(右对齐）</td></tr>
+    <tr><td>center(居中）</td></tr>
+    <tr><td>justify</td></tr>
+    <tr><td rowspan='4'>text-transform</td>
+    <td rowspan='4'>字符转换</td>
+    <td>none</td></tr>
+    <tr><td>uppercase(变为大写）</td></tr>
+    <tr><td>lowercase(变为小写）</td></tr>
+    <tr><td>capitalize（首字母大写）</td></tr>
+    <tr><td>text-indent</td>
+    <td>文本缩进</td>
+    <td>长度值或百分比</td></tr>
+    <tr><td>letter-spacing</td>
+    <td>字母间隔</td>
+    <td>长度值</td></tr>
+    <tr><td>word-spacing</td>
+    <td>字间隔</td>
+    <td>长度值</td></tr>
+    <tr><td rowspan='4'>text-decoration</td>
+    <td rowspan='4'>设置文本装饰</td>
+    <td>overline（上划线）</td></tr>
+<tr><td>underline(下划线）</td></tr>
+    <tr><td>line-through(贯穿线）</td></tr>
+    <tr><td>blink（文字闪烁）</td></tr>
+    <tr><td rowspan='5'>white-spacing</td>
+    <td rowspan='5'>处理空白符</td>
+    <td>normal</td></tr>
+<tr><td>nowrape</td></tr>
+    <tr><td>pre</td></tr>
+    <tr><td>pre-wrape</td></tr>
+    <tr><td>pre-line</td></tr>
+</table>
+
+<h3>文本缩进</h3>    
+
+<p>css提供了text-indent属性方便实现文本缩进。该属性一般只对块级元素有作用，若想对行内元素进行文本缩进，可设置内边距。缩进的长度可以用长度值和百分数表示，用长度值表示时可以用负值,百分数值表示缩进长度是父元素长度的百分比。</p>
+
+<pre><code class="language-html">p{
+text-indent:5em;
+}
+</code></pre>
+
+<pre><code class="language-html">p{
+text-indent:-10em;
+}
+</code></pre>
+
+<pre><code class="language-html">p{
+text-indent:10%;
+}
+</code></pre>
+
+<h3>字母间隔和字间隔</h3>
+
+<p>letter-spacing和word-spacing属性分别设置字母间距和字符间距。可以将字母或字符的间隔扩大或缩小。这两个属性的用法基本相同。</p>
+
+<pre><code class="language-html">p.letter{letter-spacing：20px}
+p.word{word-spacing:-0.5em}
+</code></pre>
+
+<h3>处理空白符</h3>
+
+<p>white-spacing属性会影响浏览器对空白符和换行的显示。</p>
+
+<p>共有五个值：</p>
+
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>空白符</th>
+<th>换行符</th>
+<th>自动换行</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>normal</td>
+<td>合并</td>
+<td>忽略</td>
+<td>允许</td>
+</tr>
+
+<tr>
+<td>nowrap</td>
+<td>合并</td>
+<td>忽略</td>
+<td>不允许</td>
+</tr>
+
+<tr>
+<td>pre</td>
+<td>保留</td>
+<td>保留</td>
+<td>不允许</td>
+</tr>
+
+<tr>
+<td>pre-wrap</td>
+<td>保留</td>
+<td>保留</td>
+<td>允许</td>
+</tr>
+
+<tr>
+<td>pre-line</td>
+<td>合并</td>
+<td>保留</td>
+<td>允许</td>
+</tr>
+</tbody>
+</table>
+
+<h2>字体</h2>
+
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>font-style</td>
+<td>字体风格</td>
+<td>normal(正常)，italic(斜体)，oblique(倾斜显示)&hellip;</td>
+</tr>
+
+<tr>
+<td>font-family</td>
+<td>字体系列</td>
+<td>Time，Sans-serif&hellip;</td>
+</tr>
+
+<tr>
+<td>font-weight</td>
+<td>字体加粗</td>
+<td>100,bold&hellip;</td>
+</tr>
+
+<tr>
+<td>font-size</td>
+<td>字体大小</td>
+<td>20px,5em&hellip;</td>
+</tr>
+</tbody>
+</table>
+
+<h3>字体系列</h3>
+
+<p>用font-family属性定义文本的字体系列，css字体系列分两种：</p>
+
+<table>
+    <tr>
+    <th rowspan='5'>通用字体</th>
+    <td>Serif</td></tr>
+    <tr><td>Sans-serif</td></tr>
+    <tr><td>Monospace</td></tr>
+    <tr><td>Cursive</td></tr>
+    <tr><td>Fantacy</td></tr>
+    <tr><th>
+        特定字体</th>
+    <td>Times...</td></tr>
+</table>
+
+<p>一般来说，设置的字体系列里都会有多种特定字体或通用字体系列，用来防止用户代理因没有安装某种特定字体而使用默认字体所带来的的显示效果差别太大的情况。</p>
+
+<pre><code class="language-css">p {font-family: Times, TimesNR, 'New Century Schoolbook',Georgia, 'New York', serif;}
+</code></pre>
+
+<p>上面的代码设置的字体会按照前后顺序依次检索，直到检索到用户代理已经安装的字体。</p>
+
+<p><b>注：当字体名称中含有空格或#，￥等字符时，要用单引号或双引号括起来</b></p>
+
+<h3>字体加粗</h3>
+
+<p>font-weight设置文本的粗细</p>
+
+<p>关键字：</p>
+
+<ul>
+<li>normal:正常显示文本</li>
+<li>bold：可将字体设置为粗体</li>
+<li>bolder：从继承值上移加粗度</li>
+<li>lighter：从继承值下移加粗度</li>
+</ul>
+
+<p>数值：</p>
+
+<p>用100~900的整百数可表示九级加粗度，400等价于normal,700等价于bold</p>
+
+<pre><code class="language-css">p.thick {font-weight:bold;}
+p.thicker {font-weight:900;}
+</code></pre>
+
+<h3>字体大小</h3>
+
+<p>font-size属性用来设置字体大小</p>
+
+<h4>用像素设置</h4>
+
+<p>用像素设置的是绝对字体大小</p>
+
+<p>用这种方法设置的字体大小不会随浏览器的改变而改变</p>
+
+<pre><code class="language-css">h1 {font-size:60px;}
+</code></pre>
+
+<h4>用em设置</h4>
+
+<p>用em设置的是相对字体大小</p>
+
+<p>用这种方法设置的字体大小会随父元素字体大小和浏览器改变而改变</p>
+
+<pre><code class="language-css">h1 {font-size:3.75em;}
+</code></pre>
+
+<h4>用百分数和em设置</h4>
+
+<p>在所有浏览器中均有效的方案是为 body 元素（父元素）以百分比设置默认的 font-size 值</p>
+
+<pre><code class="language-css">body {font-size:100%;}
+h1 {font-size:3.75em;}
+</code></pre>
+
+<h2>链接</h2>
+
+<p>能够为链接设置样式的属性有很多种，如color,background,font-family等</p>
+
+<p>可以为链接的不同状态分别设置样式</p>
+
+<p>链接有四种状态：</p>
+
+<ul>
+<li>a:link-未被访问的链接</li>
+<li>a:visited-已经访问的连接</li>
+<li>a:hover-鼠标指针位于链接的上方</li>
+
+<li><p>a:active-链接被点击的瞬间</p>
+
+<pre><code class="language-css">a:link {color:#B2FF99;}
+a:visited {text-decoration:underline;}
+a:hover {background-color:#FF704D;}
+a:active {font-family:Verdana, Arial, Helvetica, sans-serif;}
+</code></pre></li>
+</ul>
+
+<p><b>注：链接样式必须按照a:link,a:visited,a:hover,a:active的顺序设置</b></p>
+
+<h2>列表</h2>
+
+<table>
+    <tr><th>属性</th>
+    <th>描述</th><th>值</th></tr>
+    <tr><td rowspan='3'>list-style</td>
+    <td rowspan='3'>简写属性，将所有列表属性值放在一个声明中</td>
+    <td>disc...（style)</td></tr>
+    <tr><td>inside...(position)</td></tr>
+    <tr><td>url(地址）(image)</td></tr>
+    <tr>
+    <td rowspan='8'>list-type</td>
+    <td rowspan='8'>设置列表项标志的属性</td>
+    <td>disc（圆点）</td></tr>
+    <tr><td>circle(圆圈）</td></tr>
+    <tr><td>square（方形）</td></tr>
+    <tr><td>decimal（数字）</td></tr>
+    <tr><td>lower-roman（小写罗马字母）</td></tr>
+    <tr><td>upper-roman（大写罗马字母）</td></tr>
+    <tr><td>lower-alpha（小写英文字母）</td></tr>
+    <tr><td>upper-alpha（大写英文字母）</td></tr>
+    <tr>
+    <td>list-image</td>
+    <td>将图片设置为列表项标志</td>
+    <td>url(图片地址）</td></tr>
+    <tr>
+        <td rowspan='2'>list-position</td>
+    <td rowspan='2'>设置列表项的位置</td>
+        <td>inside</td>
+    </tr>
+    <tr><td>outside</td></tr>
+</table>
+
+<pre><code class="language-css">ol.decimal {list-style-type: decimal}
+ul.inside {list-style-position: inside}
+ul li {list-style-image : url(xxx.gif)}
+</code></pre>
+
+<pre><code class="language-css">li {list-style : url(example.gif) square inside}
+</code></pre>
+
+<h2>表格</h2>
+
+<table>
+    <tr>
+    <th>属性</th>
+    <th>描述</th>
+    <th>值</th></tr>
+    <tr>
+    <td rowspan='3'>border</td>
+    <td rowspan='3'>为表格设置边框特性</td>
+    <td>1px...(边框宽度）</td></tr>
+    <tr><td>solid(实线边框）...</td></tr>
+    <tr><td>blue...(颜色）</td></tr>
+    <tr><td rowspan='2'>border-callopse</td>
+    <td rowspan='2'>设置表格边框是否为单一边框或双线边框</td>
+    <td>callopse(单一边框）</td></tr>
+    <tr><td>separate(双线边框<）/td></tr>
+        <tr><td>border-spacing</td>
+        <td>设置分隔单元格边框的距离</td>
+        <td>像素值</td></tr>
+        <tr><td>width</td>
+        <td>设置表格宽度</td>
+        <td>百分号或像素或百分比</td></tr>
+        <tr><td>height</td>
+        <td>设置表格长度</td>
+        <td>百分号或像素或百分比</td></tr>
+        <tr><td rowspan='3'>text-align</td>
+        <td rowspan='3'>设置文本水平对齐方式</td>
+        <td>right</td></tr>
+        <tr><td>left</td></tr>
+        <tr><td>center</td></tr>
+        <tr><td rowspan='2'>vertical-align</td>
+        <td rowspan='2'>设置文本水平对齐方式</td>
+        <td>top</td></tr>
+        <tr><td>bottom</td></tr>
+        <tr><td>padding</td>
+        <td>设置内边距</td>
+        <td>像素值或百分比</td></tr>
+        <tr><td>color</td>
+        <td>设置文本颜色</td>
+        <td>...</td></tr>
+        <tr><td>background-color</td>
+        <td>设置表格背景颜色</td>
+        <td>...</td></tr>
+        <tr>
+        <td rowspan='2'>caption-side</td>
+        <td rowspan='2'>设置表格标题方向</td>
+        <td>top（上对齐)</td></tr>
+        <tr><td>bottom(下对齐）</td></tr>
+        <tr>
+        <td rowspan='2'>table-layout</td>
+        <td rowspan='2'>设置是否自动调整表格长度</td><td>automatic</td></tr>
+        <tr><td>fixed</td></tr>
+</table>
+
+<pre><code class="language-css">table, th, td{border: 1px solid blue;}
+</code></pre>
+
+<pre><code class="language-css">table{border-collapse:collapse;}
+</code></pre>
+
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+</tr>
+<tr>
+<td>Bill</td>
+<td>Gates</td>
+</tr>
+<tr>
+<td>Steven</td>
+<td>Jobs</td>
+</tr>
+</table>
+
+<pre><code class="language-css">table.two
+{
+border-collapse: separate;
+border-spacing: 10px 50px
+}
+</code></pre>
+
+<table class="two" border="1">
+    <style type="text/css">
+border-collapse: separate;
+border-spacing: 10px 50px;
+</style>
+<tr>
+<td>Carter</td>
+<td>Thomas</td>
+</tr>
+<tr>
+<td>Gates</td>
+<td>Bill</td>
+</tr>
+</table>
+
+<h2>轮廓</h2>
+
+<table>
+    <tr>
+    <th>属性</th>
+    <th>描述</th>
+    <th>值</th></tr>
+    <tr><td rowspan='3'>outline</td>
+    <td rowspan='3'>在一个声明中设置轮廓的所有属性</td>
+    <td>颜色</td></tr>
+    <tr><td>style</td></tr>
+    <tr><td>宽度</td></tr>
+    <tr><td>outline-color</td>
+    <td>设置轮廓颜色</td>
+    <td>...</td></tr>
+    <tr>
+    <td rowspan='5'>outline-style</td>
+    <td rowspan='5'>设置轮廓样式</td>
+    <td>dotted(点状）</td></tr>
+    <tr><td>dashed(虚线）</td></tr>
+    <tr><td>solid(实线）</td></tr>
+    <tr><td>double（双实线）</td></tr>
+    <tr><td>...</td></tr>
+    <tr>
+    <td>outline-width</td>
+    <td>设置轮廓宽度</td>
+    <td>像素值</td></tr>
+</table>
+
+<h2>内边距</h2>
+
+<table>
+    <tr><th>属性</th>
+    <th>描述</th>
+    <th>值</th></tr>
+<tr><td rowspan='4'>padding</td>
+    <td rowspan='4'>在一个声明中设置所有内边距值</td>
+    <td>..px</td></tr>
+    <tr><td>..em</td></tr>
+    <tr><td>..ex</td></tr>
+    <tr><td>..%</td></tr>
+</table>
+
+<pre><code class="language-css">h1 {padding: 10px 0.25em 2ex 20%;}
+</code></pre>
+
+<p><b>上面四个值分别规定了上，右，下，左的内边距值，若不想设置内边距，可将某一方向的内边距值改为0</b></p>
+
+<h2>边框</h2>
+
+<table>
+    <tr><th>属性</th>
+    <th>描述</th>
+    <th>值</th></tr>
+    <tr><td rowspan='3'>border</td>
+    <td rowspan='3'>简写border所有属性</td>
+        <td>solid(style)</td>
+    </tr>
+    <tr><td>5px...(width)</td></tr>
+    <tr><td>red...(color)</td></tr>
+    <tr><td rowspan='8'>border-style</td>
+    <td rowspan='8'>设置元素边框样式</td>
+    <td>dashed（虚线）</td></tr>
+    <tr><td>dottted(点状）</td></tr>
+    <tr><td>solid(实线）</td></tr>
+    <tr><td>double(双实线）</td></tr>
+    <tr><td>groove(凹陷）</td></tr>
+    <tr><td>ridge(凸起）</td></tr>
+    <tr><td>inset(凹陷按钮）</td></tr>
+    <tr><td>outset(凸起按钮）</td></tr>
+    <tr><td rowspan='4'>border-width</td>
+    <td rowspan='4'>定义边框宽度</td>
+    <td>长度值</td></tr>
+    <tr><td>thin</td></tr>
+    <tr><td>medium（默认值）</td></tr>
+    <tr><td>thick</td></tr>
+    <tr><td rowspan='2'>border-color</td>
+    <td rowspan='2'>设置边框颜色</td>
+    <td>颜色值</td></tr>
+    <tr><td>transparent</td></tr>
+    <tr><td>border-bottom</td>
+    <td>简写下边框的所有属性值</td>
+    <td>同border</td></tr>
+    <tr><td>border-top</td>
+    <td>简写上边框的所有属性值</td>
+    <td>同border</td></tr>
+    <tr><td>border-left</td>
+    <td>简写左边框的所有属性值</td>
+    <td>同border</td></tr>
+    <tr><td>border-right</td>
+    <td>简写右边框的所有属性值</td>
+    <td>同border</td></tr>
+</table>
+
+<p>和padding一样，border的值在赋给四周时，遵循top-right-bottom-left的顺序</p>
+
+<p>此外，还有值复制写法，即当没有特定声明时，对边的是相等的，如：</p>
+
+<pre><code class="language-css">p{border-style: outset;}
+p.groovedouble {border-style: groove double}
+p.three {border-style: solid double groove}
+p.aside {border-style: solid dotted dashed double;}
+</code></pre>
+
+<ul>
+<li>第一条声明四周的border样式都为outset</li>
+<li>第二条声明上，右，下，左的border样式分别为groove,double,groove,double</li>
+<li>第三条声明上，右，下，左的border样式分别为solid,double,groove,double</li>
+<li>第四条声明上，右，下，左的border样式分别为solid,dotted,dashed,double</li>
+</ul>
+
+<p><b>对width,color也有同样规则</b></p>
+
+<pre><code class="language-css">border: medium double rgb(250,0,255)
+</code></pre>
+
+<p><b>注：</b></p>
+
+<ul>
+<li>border-style的值默认为none，若不特别设置border-style,边框不会显示</li>
+<li>在设置border-width前一定要先设置border-style</li>
+<li>默认边框颜色为该元素或父元素的文本颜色</li>
+</ul>
+
+<h2>外边距</h2>
+
+<table>
+    <tr><th>属性</th>
+    <th>描述</th>
+    <th>值</th></tr>
+    <tr><td rowspan='2'>margin</td>
+    <td rowspan='2'>简写外边距属性值</td>
+    <td>长度值</td></tr>
+    <tr><td>百分比</td></tr>
+    <tr><td>margin-bottom</td>
+    <td>简写元素下边距属性值</td>
+     <td>同margin</td></tr>
+ <tr><td>margin-top</td>
+    <td>简写元素上边距属性值</td>
+    <td>同margin</td></tr>
+   <tr><td>margin-left</td>
+    <td>简写元素左边距属性值</td>
+    <td>同margin</td></tr>
+    <tr><td>margin-right</td>
+    <td>简写元素右边距属性值</td>
+         <td>同margin</td>
+    </tr>
+</table>
+
+<p><b>外边距同样遵循值复制原则</b></p>
+
+<h3>外边距合并</h3>
+
+<ul>
+<li>当两个垂直外边距相遇时，它们将形成一个外边距。合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。</li>
+<li>当一个元素包含在另一个元素中时（假设没有内边距或边框把外边距分隔开），它们的上和/或下外边距也会发生合并</li>
+<li>一个空元素，它有外边距，但是没有边框或填充。在这种情况下，上外边距与下外边距就碰到了一起，它们会发生合并</li>
+<li>行内框、浮动框或绝对定位之间的外边距不会合并</li>
+</ul>
+
+<h2>框模型</h2>
+
+<ul>
+<li>背景应用于由内容和内边距、边框组成的区域</li>
+<li>在 CSS 中，width 和 height 指的是内容区域的宽度和高度</li>
+</ul>
+
+<h2>选择器</h2>
+
+<h4>元素选择器和类选择器</h4>
+
+<p>这两个选择器对某一个或某一类元素进行选择</p>
+
+<pre><code class="language-css">h1 {color:blue;}
+h2 {color:silver;}
+</code></pre>
+
+<h4>选择器分组</h4>
+
+<p>若希望对多个或多类元素进行相同的设置，可以用选择器分组使她们有相同的属性</p>
+
+<pre><code class="language-css">body, h2, p, table, th, td, pre, strong, em {color:gray;}
+</code></pre>
+
+<h5>通配符选择器</h5>
+
+<p>当想要使所有元素拥有某种相同的值，可用*{&hellip;}声明， *代表选择所有元素</p>
+
+<pre><code class="language-css">* {color:red;}
+</code></pre>
+
+<h5>声明分组</h5>
+
+<p>当想要声明多种属性时，用；将各个声明隔开</p>
+
+<pre><code class="language-css">h1 {
+  font: 28px Verdana;
+  color: blue;
+  background: red;
+  }
+</code></pre>
+
+<h4>类选择器</h4>
+
+<ul>
+<li>在使用类选择器之前首先要用class属性为元素归类</li>
+
+<li><p>在类别名前加上 . 就可选择该类元素</p>
+
+<pre><code class="language-css">&lt;style type=&quot;text/css&quot;&gt;
+.important {color:red;}
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;h1 class=&quot;important&quot;&gt;This heading is very important.&lt;/h1&gt;
+
+&lt;p class=&quot;important&quot;&gt;This paragraph is very important.&lt;/p&gt;
+
+</code></pre></li>
+</ul>
+
+<h5>结合元素选择器</h5>
+
+<pre><code class="language-css">p.important {color:red;}
+</code></pre>
+
+<p>此时选择器会匹配class属性为important的p元素</p>
+
+<h5>多类选择器</h5>
+
+<p>当一个元素的class属性有多个值时，选择了其中任意一个或多个值且未选择除该元素class值以外的值的选择器都会对该元素起作用，但选择了多个值的选择器只对含有所有这些值的元素起作用。</p>
+
+<pre><code class="language-css">.important {font-weight:bold;}
+.warning {font-style:italic;}
+.important.warning {background:silver;}
+.important.urgent {background:silver;}
+&lt;p class=&quot;important&quot;&gt;
+This paragraph is a very important warning.
+&lt;/p&gt;
+&lt;p class=&quot;important warning&quot;&gt;
+This paragraph is a very important warning.
+&lt;/p&gt;
+</code></pre>
+
+<p>前三个选择器均对<p>元素起作用，第三个选择器只对第二个<p>元素起作用，第四个选择器对两个<p>元素都不起作用</p>
+
+<h4>ID选择器</h4>
+
+<ul>
+<li>在使用ID选择器之前首先要用id属性为元素命名</li>
+
+<li><p>在id名前加上 # 就可选择该类元素</p>
+
+<pre><code class="language-css">#intro {font-weight:bold;}
+...
+&lt;p id=&quot;intro&quot;&gt;This is a paragraph of introduction.&lt;/p&gt;
+</code></pre></li>
+
+<li><p>在同一个文档中，id选择器只能用一次</p></li>
+
+<li><p>id的值中不能有词列表，也不能有空格符</p></li>
+
+<li><p>类选择器和ID选择器都要区分大小写</p></li>
+</ul>
+
+<h4>属性选择器</h4>
+
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>[attribute]</td>
+<td>用于选取带有指定属性的元素。</td>
+</tr>
+
+<tr>
+<td>[attribute=value]</td>
+<td>用于选取带有指定属性和值的元素。</td>
+</tr>
+
+<tr>
+<td>[attribute~=value]</td>
+<td>用于选取属性值中包含指定词汇的元素。</td>
+</tr>
+
+<tr>
+<td>[attribute|=value]</td>
+<td>用于选取带有以指定值开头的属性值的元素，该值必须是整个单词。</td>
+</tr>
+
+<tr>
+<td>[attribute^=value]</td>
+<td>匹配属性值以指定值开头的每个元素。</td>
+</tr>
+
+<tr>
+<td>[attribute$=value]</td>
+<td>匹配属性值以指定值结尾的每个元素。</td>
+</tr>
+
+<tr>
+<td>[attribute*=value]</td>
+<td>匹配属性值中包含指定值的每个元素。</td>
+</tr>
+</tbody>
+</table>
+
+<p>选择所有含title属性的元素</p>
+
+<pre><code class="language-css">*[title] {color:red;}
+</code></pre>
+
+<p>选择含href属性的a元素</p>
+
+<pre><code class="language-css">a[href] {color:red;}
+</code></pre>
+
+<p>选择既含href又含title的a元素</p>
+
+<pre><code class="language-css">a[href][title] {color:red;}
+</code></pre>
+
+<h4>后代选择器</h4>
+
+<p>后代选择器可以将嵌套在某一特定元素的元素选择出来，使选择器后面的声明只对某一元素下的某一特定元素起作用，无论该元素嵌套得有多深。</p>
+
+<pre><code class="language-css">h1 em {color:red;}
+</code></pre>
+
+<h4>子元素选择器</h4>
+
+<p>与后代元素选择器不同，子元素选择器只选择某元素的子元素，而不会对嵌套得更深的元素进行选择</p>
+
+<pre><code class="language-css">h1 &gt; strong {color:red;}
+</code></pre>
+
+<h4>相邻兄弟选择器</h4>
+
+<p>相邻兄弟选择器可选择紧接在某一元素后面的选择器，这两个选择器必须有同一个父元素</p>
+
+<pre><code class="language-css">h1 + p {margin-top:50px;}
+</code></pre>
+
+<p><b>子元素选择器中的&gt;和相邻兄弟选择器中的+两边都可以有空格</b></p>
+
+<h4>伪类</h4>
+
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>css</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>:active</td>
+<td>向被激活的元素添加样式。</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>:focus</td>
+<td>向拥有键盘输入焦点的元素添加样式。</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>:hover</td>
+<td>当鼠标悬浮在元素上方时，向元素添加样式。</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>:link</td>
+<td>向未被访问的链接添加样式。</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>:visited</td>
+<td>向已被访问的链接添加样式。</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>:first-child</td>
+<td>向元素的第一个子元素添加样式。</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>:lang</td>
+<td>向带有指定 lang 属性的元素添加样式。</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+
+<p>伪类的语法</p>
+
+<pre><code class="language-css">selector : pseudo-class {property: value}
+</code></pre>
+
+<p>或与类搭配使用</p>
+
+<pre><code class="language-css">selector.class : pseudo-class {property: value}
+</code></pre>
+
+<h5>first-child伪类</h5>
+
+<ul>
+<li><p>寻找作为第一个元素的<p>元素</p>
+
+<pre><code class="language-css">&lt;html&gt;
+&lt;head&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+p:first-child {
+color: red;
+} 
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;some text&lt;/p&gt;
+&lt;p&gt;some text&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+</ul>
+
+<p>则<body>下第一个<p>会被选择</p>
+
+<ul>
+<li><p>寻找<p>下面的第一个<i>元素</p>
+
+<pre><code class="language-css">&lt;html&gt;
+&lt;head&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+p &gt; i:first-child {
+font-weight:bold;
+} 
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;some &lt;i&gt;text&lt;/i&gt;. some &lt;i&gt;text&lt;/i&gt;.&lt;/p&gt;
+&lt;p&gt;some &lt;i&gt;text&lt;/i&gt;. some &lt;i&gt;text&lt;/i&gt;.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+</ul>
+
+<p>则两个<p>下面的第一个<i>会被选择</p>
+
+<ul>
+<li><p>寻找作为第一个元素的<p>元素下的第一个<i>元素</p>
+
+<pre><code class="language-css">&lt;html&gt;
+&lt;head&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+p:first-child i {
+color:blue;
+} 
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;some &lt;i&gt;text&lt;/i&gt;. some &lt;i&gt;text&lt;/i&gt;.&lt;/p&gt;
+&lt;p&gt;some &lt;i&gt;text&lt;/i&gt;. some &lt;i&gt;text&lt;/i&gt;.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+</ul>
+
+<p>则<body>下第一个<p>下第一个<i>会被选择</p>
+
+<h4>伪元素</h4>
+
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>css</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>:first-letter</td>
+<td>向文本的第一个字母添加特殊样式。</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>:first-line</td>
+<td>向文本的首行添加特殊样式。</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>:befor</td>
+<td>在元素之前添加内容。</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>:after</td>
+<td>在元素之后添加内容。</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+
+<p><b>伪元素的语法与伪类的语法相同</b></p>
+</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+	<p class="center-text" style="padding: 30px;">
+	  <a class="btn btn-main" href="https://amberc-ai.github.io//blog">Back to blog</a>
+	</p>
 
 	
 		
@@ -209,7 +1183,5 @@
   </div>
 </footer>
 
-
-	
 </body>
 </html>
