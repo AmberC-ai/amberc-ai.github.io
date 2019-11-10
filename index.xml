@@ -45,12 +45,23 @@ HTML段落通过p标签进行定义
     </item>
     
     <item>
-      <title>Contact</title>
+      <title></title>
+      <link>https://amberc-ai.github.io/blog/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://amberc-ai.github.io/blog/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>title = &amp;ldquo;HTML学习笔记&amp;rdquo; date = &amp;ldquo;2019-10-09T13:39:46+02:00&amp;rdquo; description = &amp;ldquo;This is meta description for blog page&amp;rdquo; tags = [&amp;ldquo;hugo&amp;rdquo;] categories = [&amp;ldquo;pseudo&amp;rdquo;] image = &amp;ldquo;img/blog/14.jpg&amp;rdquo;
+CSS学习笔记  背景    属性 描述     background-image 设置背景图片   background-color 设置背景颜色   background-position 设置背景图像起始位置   background-attachment 设置背景图像固定或随文档一起滚动   background-repeat 设置背景图像重复和重复方式    background-position background-position属性改变图像在背景中的位置，有三种定位方式 关键字 定位背景图片位置的关键字包括center、top、bottom、left、right.关键字出现的顺序不作要求，但不能超过两个关键字，如果只出现一个关键字，则另一关键字默认为center.如top left将图片放在元素内的左上角，right将背景图片放在元素右边中部。 ```html p{ background-image:url(&#39;...&#39;); background-position:top right } ``` 百分数值 也可使用百分数值对背景图片进行定位。如60%，40%即是指元素内定位为60%，40%的点与图片内定位为60%，40%的点重合。再如，0%，0%即是指图片的左上角与元素的左上角重合，50%，50%指元素中心与图片中心重合，即图片居中放置。如果只有一个百分数，则该百分数表示水平方向，垂直方向默认为50%.</description>
+    </item>
+    
+    <item>
+      <title>CSS学习笔记</title>
       <link>https://amberc-ai.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://amberc-ai.github.io/contact/</guid>
-      <description></description>
+      <description>CSS学习笔记  背景    属性 描述     background-image 设置背景图片   background-color 设置背景颜色   background-position 设置背景图像起始位置   background-attachment 设置背景图像固定或随文档一起滚动   background-repeat 设置背景图像重复和重复方式    background-position background-position属性改变图像在背景中的位置，有三种定位方式 关键字 定位背景图片位置的关键字包括center、top、bottom、left、right.关键字出现的顺序不作要求，但不能超过两个关键字，如果只出现一个关键字，则另一关键字默认为center.如top left将图片放在元素内的左上角，right将背景图片放在元素右边中部。 ```html p{ background-image:url(&#39;...&#39;); background-position:top right } ``` 百分数值 也可使用百分数值对背景图片进行定位。如60%，40%即是指元素内定位为60%，40%的点与图片内定位为60%，40%的点重合。再如，0%，0%即是指图片的左上角与元素的左上角重合，50%，50%指元素中心与图片中心重合，即图片居中放置。如果只有一个百分数，则该百分数表示水平方向，垂直方向默认为50%. ```html p{ background-image:url(&#39;...&#39;); background-position:66% 33%; } ``` 长度值 长度值描述的是图片左上角相对于元素内边距左上角的偏移。如50px，100px表示图片左上角距元素内边距右边50px，下边100px. ```html p{ background-image:url(&#39;...&#39;); background-position:50px 100px; } ``` background-attachment 将background-attachment属性设置为scroll（滚动）或fixed（固定）可以决定背景图片是否随文档的滚动而滚动。默认值为scroll，设置为fixed后图片在可是区域内是固定不动的，这能够避免因滚动而造成图片消失或位置改变的情况。
+p{ background-image:url(&#39;...&#39;); background-attachment:fixed; }  background-repeat 如果需要背景图片在页面平铺可设置background-repeat属性，repeat-x和repeat-y分别对应水平方向上和垂直方向上的重复，no-repeat则不允许重复。背景图片默认从元素的左上角开始。</description>
     </item>
     
     <item>
